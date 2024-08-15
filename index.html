@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The number Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <input type="hidden" id="answer">
+    <input type="hidden" id="attempts">
+    <div class="row">
+        <div class="heading-section">
+        <h1>Guess the Number Game</h1>
+        <hr>
+        <h1>? ? ? ?</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3 guess-box">
+                <input type="number" id="user-input" name="" class="form-control">
+                <button id="btn-guess" class="btn btn-primary" onclick="checkNumber()">Guess The Number</button>
+                <button id="btn-play" class="btn btn-primary" onclick="window.location.reload()">Play Again</button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="msg"></div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+                <table class="table table-responsive table-striped table-bordered" id="result">
+                    <tr>
+                        <th>Guess</th>
+                        <th>Result</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row instruction">
+        <div class="col-md-6">
+            <div class="row">
+                <h2 class="text-primary">Target</h2>
+                <p>Guess the 4-digit number correctly</p>
+            </div>
+            <div class="row">
+                <h2 class="text-primary">Game Rules</h2>
+                <ul>
+                    <li>Guess must be 4-digit number.</li>
+                    <li>You win only if your guess is an exact match</li>
+                    <li>A number can appear more than once</li>
+                    <li>Maximum 10 guesses</li>
+                    <li><i class="fa-solid fa-check"></i> : Number is in correct position.</li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i> : Number is part of the code, but not in the right postion</li>
+                    <li><i class="fa-solid fa-xmark"></i> : Number is not part of the code</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>

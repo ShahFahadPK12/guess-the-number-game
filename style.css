@@ -1,0 +1,34 @@
+/*CSS*/
+body{
+    font-size:16px;
+}
+.heading-section{
+    background-color:#f1f4f5;
+    margin-bottom:50px;
+}
+.guess-box{
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 12px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    
+}
+
+
+.guess-box #btn-play,
+.guess-box #btn-guess{
+    margin-top:10px;
+}
+.msg-success{
+    color:green;
+    font-size:200%;
+}
+#btn-play{
+    display:none;
+}
+.instruction{
+    background-color: #ebefed;
+    padding:5px;
+}
+.instruction ul li{
+    list-style-type: none;
+}
